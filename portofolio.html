@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/humberger.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <meta name="description" content="Portfolio seorang web developer dengan keahlian Laravel dan Vue.js">
+    <meta name="keywords" content="Portfolio, Web Developer, Laravel, Vue.js, Livewire">
+    <meta name="author" content="Akmal Rahmansyah">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="branding">
+            <img class="profile-icon" src="img/icon.png" alt="Profile Photo">
+            <a href="#about" class="a-non">
+                <h1 class="name">Portfolio</h1>
+            </a>
+        </div>
+        <!-- Tombol hamburger menu -->
+        <button id="hamburger-menu" class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </button>
+
+        <!-- Navigasi -->
+        <div class="navbar-nav">
+            <div class="tombol-carousel">
+                <a href="#about" class="tombol">About</a>
+                <a href="#sertifikat" class="tombol">Sertifikat</a>
+                <a href="#skil" class="tombol">skil</a>
+                <a href="#projects" class="tombol">Projects</a>
+                <a href="#contacts" class="tombol">Contact</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="about" class="hero">
+        <img src="img/akmal.jpg" alt="Profile Photo" class="profile-photo">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>Akmal Rahmansyah</h2>
+                <p>Saya adalah seorang web developer fresh graduate dengan framework
+                    berbasis Laravel dan Vue.js yang berfokus pada integrasi
+                    front-end dan back-end. Dalam proyek saya, saya mengutamakan efisiensi, seperti meningkatkan
+                    kecepatan login. </p>
+                <p>Saya juga menggunakan Laravel Livewire untuk fitur
+                    dinamis, Pinia untuk manajemen state, dan memastikan aksesibilitas fitur berdasarkan peran pengguna,
+                    serta menggunakan restful api untuk komunikasi antar sistem, akses data secara terstruktur dan
+                    fleksibilitas format data.</p>
+                <p>Saya selalu terbuka untuk belajar, seperti mengeksplorasi solusi melalui
+                    tutorial, dokumentasi, dan
+                    forum pengembang.</p>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- sertifikat -->
+    <section id="sertifikat" class="title">
+        <h2>sertifikat</h2>
+
+    </section>
+    <!-- skil section -->
+    <section id="skil" class="title">
+        <h2>Keahlian ( skil )</h2>
+        <div class="box-carousel">
+            <div class="box">
+                <a href="https://vuejs.org/" class="a-non" target="_blank">
+                    <img src="img/logo/vue.png" alt="Vue.js">
+                    <p>Vue.js</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="https://laravel.com/" class="a-non" target="_blank">
+                    <img src="img/logo/Laravel.svg.png" alt="Laravel">
+                    <p>Laravel</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="https://getbootstrap.com/" class="a-non" target="_blank">
+                    <img src="img/logo/bootstrap.jpg" alt="bootstrapUI">
+                    <p>bootstrap UI</p>
+                </a>
+            </div>
+            <div class="box">
+                <a href="https://tailwindui.com/" class="a-non" target="_blank">
+                    <img src="img/logo/logo.png" alt="TailwindUI">
+                    <p>Tailwind UI</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="title">
+        <h2>Project Saya</h2>
+        <!-- Tombol kategori -->
+        <div id="categories" class="content">
+            <div data-aos="zoom-out-right" data-aos-duration="1000">
+                <button class="category" data-category="e-voting">
+                    <img src="img/logo/logo kemku.jpg" alt="Laravel">
+                    <h1>E-Voting</h1>
+                </button>
+            </div>
+            <div data-aos="zoom-in-up" data-aos-duration="1000">
+                <button class="category" data-category="inventaris">
+                    <img src="img/logo/logo.png" alt="Laravel">
+                    <h1>Inventaris</h1>
+                </button>
+            </div>
+            <div data-aos="zoom-out-left" data-aos-duration="1000">
+                <button class="category" data-category="logo">
+                    <img src="img/logo/taildwind.png" alt="Laravel">
+                    <h1>Logo</h1>
+                </button>
+            </div>
+        </div>
+
+        <div id="project-container" class="content1 project-display">
+            <!-- Gambar dan proyek akan dimasukkan secara dinamis dengan JS -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacts" class="title">
+        <h2>Contact Me</h2>
+        <div class="contact">
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <div class="col">
+                    <textarea placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i> Twitter</a>
+                <a href="#" class="social-icon"><i class="bi bi-linkedin"></i> LinkedIn</a>
+                <a href="#" class="social-icon"><i class="bi bi-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/drop-down.js"></script>
+    <script src="js/humburger.js"></script>
+
+    <!-- animasi -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- email -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        emailjs.init("7Pt88DNXG-5I2Qwue");
+
+        document.querySelector(".contact-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const form = event.target;
+            const name = form.querySelector('input[type="text"]').value;
+            const email = form.querySelector('input[type="email"]').value;
+            const message = form.querySelector("textarea").value;
+
+            emailjs.send("service_6d5933o", "template_dqes0x5", {
+                from_name: name,
+                from_email: email,
+                message: message,
+            }).then(
+                function (response) {
+                    console.log("Email berhasil dikirim:", response);
+                    alert("Pesan berhasil dikirim! Terima kasih telah menghubungi kami.");
+                    form.reset();
+                },
+                function (error) {
+                    console.error("Gagal mengirim email:", error);
+                    alert("Terjadi kesalahan. Silakan coba lagi.");
+                }
+            );
+        });
+    </script>
+
+
+
+</body>
+
+</html>
