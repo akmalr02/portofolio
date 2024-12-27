@@ -1,7 +1,7 @@
 /* color style */
 :root {
   --black: #0d0d0d;
-  --bg: #252323;
+  --bg: #242323;
   --primery: #00ffcc;
   --white: #ffff;
   --shadow-primary: 0 10px 20px rgba(0, 255, 204, 0.5);
@@ -101,12 +101,13 @@ body {
 
 /* Hero Section */
 .hero {
-  min-height: 60vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 3rem 7rem;
   flex-wrap: wrap;
+  /* margin-bottom: 10em; */
 }
 
 .profile-photo {
@@ -188,6 +189,7 @@ h3 {
 
 /* title Section Styling */
 .title {
+  min-height: 60vh;
   padding: 50px 20px;
   text-align: center;
 }
@@ -393,10 +395,42 @@ h3 {
 .contact-form button:hover {
   background-color: #008f7a;
 }
-.social-links a {
-  color: var(--primery);
-  margin: 2em;
+
+.social-links {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  background-color: #f1f1f1;
+  color: #000;
+  border-radius: 20px 0 0 20px;
   text-decoration: none;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.social-icon i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+.social-icon:hover {
+  background-color: #0073e6; /* Warna hover */
+  color: white;
+  transform: translateX(-5px);
 }
 
 /* Media Query untuk perangkat kecil (ponsel) */
