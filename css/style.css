@@ -111,10 +111,12 @@ body {
 }
 
 .profile-photo {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 3px solid var(--primery);
+  width: 250px;
+  height: 250px;
+  /* border-radius: 50%; */
+  /* border: 3px solid var(--primery); */
+  filter: drop-shadow(0 0 0.6rem #2a8674);
+
   transition: transform 0.3s ease;
 }
 
@@ -412,7 +414,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 15px;
+  padding: 10px;
   background-color: #f1f1f1;
   color: #000;
   border-radius: 20px 0 0 20px;
@@ -420,24 +422,48 @@ h3 {
   font-size: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .social-icon i {
-  margin-right: 8px;
   font-size: 20px;
+  z-index: 1;
+}
+
+.social-icon span {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  color: white;
+  transition: all 0.3s ease;
+  margin-left: 8px;
+  z-index: 0;
 }
 
 .social-icon:hover {
-  background-color: #0073e6; /* Warna hover */
+  background-color: #0073e6;
   color: white;
   transform: translateX(-5px);
+}
+
+.social-icon:hover span {
+  opacity: 1;
+  width: auto;
 }
 
 /* Media Query untuk perangkat kecil (ponsel) */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
+    /* align-items: flex-start; */
     padding: 1rem;
+  }
+
+  .profile-icon {
+    width: 35px; /* Mengecilkan ukuran pada layar kecil */
+    height: 35px;
   }
 
   .hero {
