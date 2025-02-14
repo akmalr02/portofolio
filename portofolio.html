@@ -24,12 +24,13 @@
     <!-- Header -->
     <header class="header">
         <div class="branding">
-            <img class="profile-icon" src="img/icon.png" alt="Profile Photo">
+            <img class="profile-icon" src="asset/img/icon.png" alt="Profile Photo">
             <a href="#about" class="a-non">
-                <h1 class="name">Portfolio</h1>
+                <h1 class="name">Akmal Rahmansyah</h1>
             </a>
         </div>
-        <!-- Tombol hamburger menu -->
+
+        <!-- Tombol Hamburger Menu -->
         <button id="hamburger-menu" class="hamburger-menu">
             <div class="line"></div>
             <div class="line"></div>
@@ -37,16 +38,17 @@
         </button>
 
         <!-- Navigasi -->
-        <div class="navbar-nav">
+        <nav class="navbar-nav">
             <div class="tombol-carousel">
-                <a href="#about" class="tombol">About</a>
-                <a href="#sertifikat" class="tombol">Sertifikat</a>
-                <a href="#skil" class="tombol">skil</a>
-                <a href="#projects" class="tombol">Projects</a>
+                <a href="#about" class="tombol">About Me</a>
+                <a href="#sertifikat" class="tombol">Certificate</a>
+                <a href="#skil" class="tombol">Skill</a>
+                <a href="#projects" class="tombol">Project </a>
                 <a href="#contacts" class="tombol">Contact</a>
             </div>
-        </div>
+        </nav>
     </header>
+
 
     <!-- Sosial Media -->
     <div class="social-links">
@@ -62,90 +64,124 @@
 
     <!-- Hero Section -->
     <section id="about" class="hero">
-        <img src="img/Akmal.png" alt="Profile Photo" class="profile-photo">
-        <div class="hero-text">
-            <h2>Akmal Rahmansyah</h2>
-            <p class="plugins"></p>
-
-        </div>
-        <div class="hero-content">
-
+        <h2 data-aos="zoom-in-up">About Me</h2>
+        <div class="card">
+            <div class="hero-container">
+                <img src="asset/img/Akmal.png" alt="Profile Photo" class="profile-photo">
+                <div class="hero-text">
+                    <h2>Akmal Rahmansyah</h2>
+                    <h1 class="judul"></h1>
+                    <p class="plugins"></p>
+                    <a id="downloadLink" href="asset/pdf/Resume.pdf" target="_blank" download="Resume_Akmal.pdf"
+                        class="tombol2">
+                        <i class="bi bi-filetype-pdf"></i> Download Resume
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- sertifikat -->
     <section id="sertifikat" class="title">
-        <h2 data-aos="zoom-in-up">Sertifikat</h2>
+        <h2 data-aos="zoom-in-up">Certificate</h2>
         <div class="sertifikat">
-            <img data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-                src="img/Sertifikasi/BEC-V.jpg" alt="">
-            <img data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
-                src="img/Sertifikasi/cyber-scurty.jpg" alt="">
-            <img data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" src="img/Sertifikasi/DEA.jpg"
-                alt="">
-            <img data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
-                src="img/Sertifikasi/Sertifikat Magang .jpg" alt="">
+            <div class="card2">
+                <img src="asset/img/Sertifikasi/BEC-V.jpg" alt="Business English Certificate V"
+                    onclick="openModal(this)">
+                <div class="card-info">
+                    <p>Business English Certificate V</p>
+                </div>
+            </div>
+
+            <div class="card2">
+                <img src="asset/img/Sertifikasi/cyber-scurty.jpg" alt="Cyber Security Certification"
+                    onclick="openModal(this)">
+                <div class="card-info">
+                    <p>Cyber Security Certification</p>
+                </div>
+            </div>
+
+            <div class="card2">
+                <img src="asset/img/Sertifikasi/DEA.jpg" alt="Data Engineering Associate" onclick="openModal(this)">
+                <div class="card-info">
+                    <p>Data Engineering Associate</p>
+                </div>
+            </div>
+
+            <div class="card2">
+                <img src="asset/img/Sertifikasi/Sertifikat Magang .jpg" alt="Sertifikat Magang"
+                    onclick="openModal(this)">
+                <div class="card-info">
+                    <p>Sertifikat Magang</p>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" class="modal-content">
+    </div>
+
     <!-- skil section -->
     <section id="skil" class="skil">
-        <h2 data-aos="zoom-in-up">Keahlian ( skil )</h2>
+        <h2 data-aos="zoom-in-up">Skill</h2>
         <div class="skil-container">
             <a href="https://vuejs.org/" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
                 class="a-non" target="_blank">
                 <h1>Vue.js</h1>
-                <img src="img/logo/vue.png" alt="Vue.js">
+                <img src="asset/img/logo/vue.png" alt="Vue.js">
             </a>
             <a href="https://laravel.com/" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
                 class="a-non" target="_blank">
                 <h1>Laravel</h1>
-                <img src="img/logo/laravel.png" alt="Laravel">
+                <img src="asset/img/logo/laravel.png" alt="Laravel">
             </a>
             <a href="https://getbootstrap.com/" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
                 class="a-non" target="_blank">
                 <h1>Bootstrap</h1>
-                <img src="img/logo/bootstrap.png" alt="bootstrapUI">
+                <img src="asset/img/logo/bootstrap.png" alt="bootstrapUI">
             </a>
             <a href="https://tailwindui.com/" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
                 class="a-non" target="_blank">
                 <h1>Tailwindui</h1>
-                <img src="img/logo/tailwind.png" alt="TailwindUI">
+                <img src="asset/img/logo/tailwind.png" alt="TailwindUI">
             </a>
             <a href="https://jwt.io/" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="a-non"
                 target="_blank">
                 <h1>JWT</h1>
-                <img src="img/logo/jwt.png" alt="TailwindUI">
+                <img src="asset/img/logo/jwt.png" alt="TailwindUI">
             </a>
             <a href="https://www.mysql.com/" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
                 class="a-non" target="_blank">
                 <h1>mysql</h1>
-                <img src="img/logo/MySql.png" alt="TailwindUI">
+                <img src="asset/img/logo/MySql.png" alt="TailwindUI">
             </a>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="title">
-        <h2 data-aos="zoom-in-up">Project Saya</h2>
+        <h2 data-aos="zoom-in-up">Project</h2>
         <!-- Tombol kategori -->
         <div id="categories" class="content">
             <div data-aos="zoom-out-right" data-aos-duration="1000">
                 <button class="category" data-category="e-voting">
-                    <img src="img/logo/logo kemku.jpg" alt="Laravel">
+                    <img src="asset/img/logo/logo kemku.jpg" alt="Laravel">
                     <h1>E-Voting</h1>
                 </button>
             </div>
             <div data-aos="zoom-in-up" data-aos-duration="1000">
                 <button class="category" data-category="inventaris">
-                    <img src="img/logo/logo.png" alt="Laravel">
+                    <img src="asset/img/logo/logo.png" alt="Laravel">
                     <h1>Inventaris</h1>
                 </button>
             </div>
             <div data-aos="zoom-out-left" data-aos-duration="1000">
                 <button class="category" data-category="logo">
-                    <img src="img/logo/tailwind.png" alt="Laravel">
-                    <h1>Logo</h1>
+                    <img src="asset/img/icon.png" alt="Laravel">
+                    <h1>Services</h1>
                 </button>
             </div>
         </div>
@@ -156,7 +192,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contacts" class="title">
+    <section id="contacts" class="contact-section">
         <h2 data-aos="zoom-in-up">Contact Me</h2>
         <div class="contact">
             <form class="contact-form">
@@ -165,12 +201,15 @@
                 <div class="col">
                     <textarea data-aos="zoom-in-up" placeholder="Your Message" required></textarea>
                 </div>
-                <button data-aos="zoom-in-up" type="submit">Send</button>
+                <div class="button-wrapper">
+                    <button data-aos="zoom-in-up" type="submit">Send</button>
+                </div>
             </form>
         </div>
     </section>
 
     <script src="js/main.js"></script>
+    <script src="js/image.js"></script>
     <script src="js/drop-down.js"></script>
     <script src="js/humburger.js"></script>
     <!-- <script src="js/block.js"></script> -->
@@ -186,7 +225,8 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
     <script>
         gsap.registerPlugin(TextPlugin);
-        gsap.to('.plugins', { duration: 5.5, delay: 1, text: 'Saya web developer fresh graduate dengan framework Laravel dan vue.js' });
+        gsap.to('.judul', { duration: 5.5, delay: 1, text: 'Web developer fresh graduate' });
+        gsap.to('.plugins', { duration: 5.5, delay: 1, text: 'Pengalaman di bidang web developer 1 tahun dengan pengerjaan beberapa project menggunakan laravel, restful api, vue.js, dan database mysql.' });
     </script>
 
     <!-- email -->

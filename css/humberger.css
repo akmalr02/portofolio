@@ -25,6 +25,38 @@
   border-radius: 2px;
 }
 
+/* Default, navbar tetap tampil di layar besar */
+.navbar-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Sembunyikan navbar saat layar lebih kecil dari 1024px */
+@media (max-width: 1024px) {
+  .navbar-nav {
+    display: none; /* Navbar disembunyikan */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 200px;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Ketika navbar aktif, tampilkan kembali */
+  .navbar-nav.active {
+    display: flex;
+  }
+
+  /* Tampilkan tombol hamburger */
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+}
+
 @media (max-width: 768px) {
   .hamburger-menu {
     display: block;
