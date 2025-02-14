@@ -25,16 +25,14 @@
   border-radius: 2px;
 }
 
-/* Default, navbar tetap tampil di layar besar */
 .navbar-nav {
   display: flex;
   gap: 1rem;
 }
 
-/* Sembunyikan navbar saat layar lebih kecil dari 1024px */
 @media (max-width: 1024px) {
   .navbar-nav {
-    display: none; /* Navbar disembunyikan */
+    display: none;
     flex-direction: column;
     position: absolute;
     top: 60px;
@@ -45,12 +43,10 @@
     transition: all 0.3s ease-in-out;
   }
 
-  /* Ketika navbar aktif, tampilkan kembali */
   .navbar-nav.active {
     display: flex;
   }
 
-  /* Tampilkan tombol hamburger */
   .hamburger-menu {
     display: block;
     cursor: pointer;
