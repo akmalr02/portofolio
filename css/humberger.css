@@ -6,7 +6,7 @@
   border: none;
   cursor: pointer;
   position: absolute;
-  top: 2rem;
+  top: 2.4rem;
   right: 20px;
   z-index: 1000;
   transition: color 0.3s ease;
@@ -45,6 +45,7 @@
 
   .navbar-nav.active {
     display: flex;
+    margin-top: 2em;
   }
 
   .hamburger-menu {
@@ -66,5 +67,6 @@
 
   .navbar-nav.active {
     display: flex;
+    margin-top: 1em;
   }
 }

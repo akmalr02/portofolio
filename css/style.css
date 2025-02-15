@@ -104,7 +104,7 @@ h3 {
 #about,
 #projects,
 #contact {
-  scroll-margin-top: 100px;
+  scroll-margin-top: 10px;
 }
 
 body {
@@ -158,12 +158,12 @@ body {
 
 /* Hero Section */
 .hero {
-  min-height: 100vh;
+  min-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   background-color: var(--background-color);
 }
 
@@ -182,7 +182,7 @@ body {
   gap: 5rem;
   flex-wrap: nowrap;
   text-align: left;
-  max-width: 800px;
+  max-width: 900px;
 }
 
 .profile-photo {
@@ -445,33 +445,6 @@ body {
   opacity: 1;
 }
 
-/* Grid Responsif */
-@keyframes projectFadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-.project.hidden {
-  animation: projectFadeOut 0.4s ease forwards;
-}
-
-@keyframes projectFadeOut {
-  from {
-    opacity: 1;
-    transform: scale(1);
-  }
-  to {
-    opacity: 0;
-    transform: scale(0.9);
-  }
-}
-
 /* Contact Section */
 .contact {
   background: linear-gradient(to bottom, #0096c7, #00509e);
@@ -569,6 +542,34 @@ body {
   width: auto;
 }
 
+/* Grid Responsif */
+@keyframes projectFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.project.hidden {
+  animation: projectFadeOut 0.4s ease forwards;
+}
+
+@keyframes projectFadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+/* ========== MEDIA QUERY UNTUK PERANGKAT LEBIH KECIL (HP) ========== */
 @media screen and (max-width: 480px) {
   .contact-section {
     padding: 1.5em 1em;
@@ -584,19 +585,26 @@ body {
   }
 
   .contact-form {
-    width: 95%;
+    width: 100%;
   }
 
   .contact-form input,
   .contact-form textarea {
+    width: 90%;
     padding: 0.7rem;
     font-size: 0.875rem;
+    margin: 8px 0;
   }
 
   .contact-form button {
-    padding: 0.7rem 1.4rem;
-    font-size: 0.875rem;
-    min-width: 100px;
+    width: auto;
+    max-width: 200px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .button-wrapper {
+    margin-top: 1rem;
   }
 }
 
@@ -617,7 +625,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
   }
 
   .hero-container {
@@ -694,23 +702,19 @@ body {
   }
 
   .contact-form {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .form-group {
     width: 100%;
   }
 
   .contact-form input,
   .contact-form textarea {
-    width: 100%;
+    width: 90%;
     padding: 0.8rem;
     font-size: 0.9rem;
+    margin: 10px 0;
   }
 
   .button-wrapper {
-    margin-top: 15px;
+    margin-top: 1.2rem;
   }
 
   .contact-form button {
