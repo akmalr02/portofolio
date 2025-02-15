@@ -3,7 +3,7 @@
   --black: #0d0d0d;
   --bg: #242323;
   --primery: #00ffcc;
-  --white: #ffff;
+  --white: #ffffff;
   --shadow-primary: 0 10px 20px rgba(0, 255, 204, 0.5);
   --transition-standard: 0.3s ease;
 }
@@ -15,17 +15,21 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--bg);
+  color: var(--black);
+  padding-top: 80px;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
-.a-non {
-  text-decoration: none;
-}
-
 .tombol {
-  background-color: var(-r-bg);
+  background-color: var(--bg);
   padding: 1em;
+  margin-bottom: 1em;
   border-radius: 10px;
   transition: var(--transition-standard);
 }
@@ -47,7 +51,7 @@ html {
   background-color: var(--black);
   padding: 1rem 2rem;
   border-radius: 8px;
-  color: white;
+  color: var(--white);
   text-decoration: none;
   display: inline-block;
   font-size: 18px;
@@ -101,16 +105,14 @@ h3 {
   background-color: var(--white);
 }
 
+/* .a-non {
+  text-decoration: none;
+} */
+
 #about,
 #projects,
 #contact {
   scroll-margin-top: 10px;
-}
-
-body {
-  font-family: "Ubuntu", sans-serif;
-  background-color: var(--bg);
-  padding-top: 80px;
 }
 
 .branding {
