@@ -91,19 +91,22 @@
             <div class="hero-container">
                 <img src="asset/img/Akmal.png" alt="Profile Photo" class="profile-photo">
                 <div class="hero-text">
+
+                    <!-- Judul -->
                     <h1 class="judul lang-id hidden"></h1>
                     <h1 class="judul-en lang-en"></h1>
 
+                    <!-- Deskripsi -->
                     <p class="plugins1 lang-id hidden"></p>
                     <p class="plugins1-en lang-en"></p>
 
                     <p class="plugins2 lang-id hidden"></p>
                     <p class="plugins2-en lang-en"></p>
 
+                    <!-- Tombol -->
                     <div id="lang-toggle" class="hidden" style="text-align: right; margin-top: 1rem;">
                         <button onclick="setLanguage('id')" class="tombol2">🇮🇩</button>
                         <button onclick="setLanguage('en')" class="tombol2">🇺🇸</button>
-                        <!-- Tombol -->
                         <a id="downloadLink" href="asset/pdf/CV.pdf" target="_blank" download="Resume_Akmal.pdf"
                             class="tombol2">
                             <i class="bi bi-filetype-pdf"></i> Download Resume
@@ -266,19 +269,16 @@
     <script>
         gsap.registerPlugin(TextPlugin);
 
-        // Pastikan elemen target tidak hidden saat di-animate
-        document.querySelectorAll('.lang-en').forEach(el => el.classList.remove('hidden'));
-
         gsap.to('.judul-en', {
             duration: 4,
             delay: 1,
-            text: 'Fresh Graduate web development'
+            text: 'Fresh Graduate Web Developer'
         });
 
         gsap.to('.plugins1-en', {
             duration: 6,
             delay: 2,
-            text: 'I am a web development with over 1 year of experience in building web applications using Laravel (backend), RESTful APIs, Vue.js and Livewire (frontend), and MySQL as the database. I have been involved in several full-cycle projects, from planning to deployment, and am committed to continuously improving my technical skills and applying best practices in web development.'
+            text: 'I am a Web Developer with over 1 year of experience in building web applications using Laravel (backend), RESTful APIs, Vue.js and Livewire (frontend), and MySQL as the database. I have been involved in several full-cycle projects, from planning to deployment, and am committed to continuously improving my technical skills and applying best practices in web development.'
         });
 
         gsap.to('.plugins2-en', {
@@ -290,24 +290,14 @@
             }
         });
 
-        gsap.to('.judul', {
-            duration: 2,
-            text: 'Web Developer Fresh Graduate'
-        });
-        gsap.to('.plugins1', {
-            duration: 3,
-            text: 'Saya adalah Web Developer dengan pengalaman lebih dari 1 tahun dalam membangun aplikasi menggunakan Laravel (backend), RESTful API, Vue.js dan Livewire (frontend), serta database MySQL. Saya telah terlibat dalam berbagai proyek dari tahap perancangan hingga deployment, dan berkomitmen untuk terus mengembangkan keahlian teknis serta menerapkan praktik terbaik dalam pengembangan web.'
-        });
-        gsap.to('.plugins2', {
-            duration: 3,
-            text: 'Saya memiliki motivasi tinggi untuk bekerja secara kolaboratif maupun mandiri, dengan fokus pada solusi yang efisien, scalable, dan berorientasi pada pengembangan berkelanjutan.'
-        });
+        // ✅ Fungsi ganti bahasa (manual tanpa animasi ulang)
         function setLanguage(lang) {
             const isIndo = lang === 'id';
 
             document.querySelectorAll('.lang-id').forEach(el => {
                 el.classList.toggle('hidden', !isIndo);
             });
+
             document.querySelectorAll('.lang-en').forEach(el => {
                 el.classList.toggle('hidden', isIndo);
             });
