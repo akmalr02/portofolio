@@ -89,24 +89,19 @@
         <h2 data-aos="zoom-in-up">About Me</h2>
         <div class="card">
             <div class="hero-container">
-                <img src="asset/img/Akmal.png" alt="Profile Photo" class="profile-photo">
+                <img src="asset/img/Akmal.jpg" alt="Profile Photo" class="profile-photo">
                 <div class="hero-text">
 
                     <!-- Judul -->
-                    <h1 class="judul lang-id hidden"></h1>
                     <h1 class="judul-en lang-en"></h1>
 
                     <!-- Deskripsi -->
-                    <p class="plugins1 lang-id hidden"></p>
                     <p class="plugins1-en lang-en"></p>
 
-                    <p class="plugins2 lang-id hidden"></p>
                     <p class="plugins2-en lang-en"></p>
 
                     <!-- Tombol -->
                     <div id="lang-toggle" class="hidden" style="text-align: right; margin-top: 1rem;">
-                        <button onclick="setLanguage('id')" class="tombol2">🇮🇩</button>
-                        <button onclick="setLanguage('en')" class="tombol2">🇺🇸</button>
                         <a id="downloadLink" href="asset/pdf/CV.pdf" target="_blank" download="Resume_Akmal.pdf"
                             class="tombol2">
                             <i class="bi bi-filetype-pdf"></i> Download Resume
@@ -189,7 +184,7 @@
             </a>
             <a href="https://tailwindui.com/" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
                 class="a-non" target="_blank">
-                <h1>Tailwindui</h1>
+                <h1>Tailwind</h1>
                 <img src="asset/img/logo/tailwind.png" alt="TailwindUI">
             </a>
             <a href="https://jwt.io/" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="a-non"
@@ -272,36 +267,23 @@
         gsap.to('.judul-en', {
             duration: 4,
             delay: 1,
-            text: 'Fresh Graduate Web Developer'
+            text: 'Web Developer'
         });
 
         gsap.to('.plugins1-en', {
             duration: 6,
             delay: 2,
-            text: 'I am a Web Developer with over 1 year of experience in building web applications using Laravel (backend), RESTful APIs, Vue.js and Livewire (frontend), and MySQL as the database. I have been involved in several full-cycle projects, from planning to deployment, and am committed to continuously improving my technical skills and applying best practices in web development.'
+            text: 'I am a Full-Stack Web Developer with expertise in Laravel, Vue.js, Tailwind CSS, and REST API integration. Over the course of several previous projects, I have developed digital solutions such as e-voting systems, inventory management platforms, and service request applications. My expertise includes designing role-based authentication systems, building responsive interfaces, and integrating real-time data visualizations through modern frameworks like Livewire and Chart.js.'
         });
 
         gsap.to('.plugins2-en', {
             duration: 6,
             delay: 3,
-            text: 'Highly motivated to work both collaboratively and independently, with a focus on building efficient, scalable solutions, and consistently learning from experience to become better each day.',
+            text: 'I am committed to continuous learning and collaboration, with a strong focus on delivering high-quality code, user-centered design, and scalable architecture. I aspire to contribute to global projects where technology empowers efficiency, transparency, and innovation.',
             onComplete: () => {
                 document.getElementById('lang-toggle').classList.remove('hidden');
             }
         });
-
-        // ✅ Fungsi ganti bahasa (manual tanpa animasi ulang)
-        function setLanguage(lang) {
-            const isIndo = lang === 'id';
-
-            document.querySelectorAll('.lang-id').forEach(el => {
-                el.classList.toggle('hidden', !isIndo);
-            });
-
-            document.querySelectorAll('.lang-en').forEach(el => {
-                el.classList.toggle('hidden', isIndo);
-            });
-        }
     </script>
 
     <!-- email -->
