@@ -1,321 +1,526 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Akmal Rahmansyah</title>
+    <title>Akmal Rahmansyah - Web Developer | Laravel, Vue.js & MySQL</title>
 
     <!-- Favicon -->
     <link rel="icon" href="asset/img/icon.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="asset/img/icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="asset/img/icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="asset/img/icon-16x16.png">
 
-    <!-- Style -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/humberger.css">
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Akmal Rahmansyah - Web Developer | Laravel, Vue.js & MySQL Expert">
+    <meta name="description"
+        content="Portfolio profesional Akmal Rahmansyah, Web Developer berpengalaman dengan keahlian Laravel, Vue.js, Livewire, dan MySQL. Lihat proyek-proyek terbaru dan hubungi untuk kolaborasi.">
+    <meta name="keywords"
+        content="Akmal Rahmansyah, Web Developer Jakarta, Laravel Developer, Vue.js Developer, Livewire, MySQL, Fullstack Developer Indonesia, Portfolio Developer, Jasa Pembuatan Website">
+    <meta name="author" content="Akmal Rahmansyah">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="id">
+    <meta name="revisit-after" content="7 days">
+    <meta name="geo.region" content="ID-JK">
+    <meta name="geo.placename" content="Jakarta">
 
-    <!-- Font & Icons -->
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://portofolio-akmal.netlify.app//">
+
+    <!-- Open Graph / Facebook -->
+    <!-- <meta property="og:type" content="website">
+    <meta property="og:url" content="https://portofolio-akmal.netlify.app//">
+    <meta property="og:title" content="Akmal Rahmansyah - Web Developer | Laravel, Vue.js & MySQL Expert">
+    <meta property="og:description"
+        content="Portfolio profesional Akmal Rahmansyah, Web Developer berpengalaman dengan keahlian Laravel, Vue.js, Livewire, dan MySQL. Lihat proyek-proyek terbaru dan hubungi untuk kolaborasi.">
+    <meta property="og:image" content="https://portofolio-akmal.netlify.app//asset/img/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Akmal Rahmansyah Portfolio">
+    <meta property="og:locale" content="id_ID"> -->
+
+    <!-- Twitter -->
+    <!-- <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://portofolio-akmal.netlify.app//">
+    <meta property="twitter:title" content="Akmal Rahmansyah - Web Developer | Laravel, Vue.js & MySQL Expert">
+    <meta property="twitter:description"
+        content="Portfolio profesional Akmal Rahmansyah, Web Developer berpengalaman dengan keahlian Laravel, Vue.js, Livewire, dan MySQL.">
+    <meta property="twitter:image" content="https://portofolio-akmal.netlify.app//asset/img/twitter-image.jpg">
+    <meta property="twitter:creator" content="@yourtwitterhandle"> -->
+
+    <!-- Additional Meta for Better SEO -->
+    <meta name="theme-color" content="#1a202c">
+    <meta name="msapplication-TileColor" content="#1a202c">
+    <meta name="application-name" content="Akmal Rahmansyah Portfolio">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Akmal Rahmansyah",
+        "url": "https://portofolio-akmal.netlify.app/",
+        "jobTitle": "Web Developer",
+        "description": "Full-Stack Web Developer dengan expertise Laravel, Vue.js, Tailwind CSS, dan REST API integration",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelancer"
+        },
+        "knowsAbout": ["Laravel", "Vue.js", "Livewire", "MySQL", "Web Development", "Fullstack Development", "Bootstrap", "Tailwind CSS", "JWT", "REST API"],
+        "hasCredential": [
+            {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Business English Certificate V"
+            },
+            {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Cyber Security Certification"
+            },
+            {
+                "@type": "EducationalOccupationalCredential", 
+                "name": "Data Engineering Associate"
+            },
+            {
+                "@type": "EducationalOccupationalCredential",
+                "name": "Sertifikat LSP 2024-2027"
+            }
+        ],
+        "sameAs": [
+            "https://www.linkedin.com/in/akmal-rahmansyah-803156262/",
+            "https://github.com/akmalr02"
+        ],
+        "image": "https://portofolio-akmal.netlify.app//asset/img/Akmal.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Jakarta",
+            "addressCountry": "ID"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+62-812-8194-812",
+            "contactType": "customer service",
+            "availableLanguage": ["Indonesian", "English"]
+        }
+    }
+    </script>
+
+    <!-- Website/Portfolio Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Akmal Rahmansyah Portfolio",
+        "url": "https://portofolio-akmal.netlify.app/",
+        "description": "Portfolio website showcasing web development projects and skills",
+        "author": {
+            "@type": "Person",
+            "name": "Akmal Rahmansyah"
+        },
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://portofolio-akmal.netlify.app//search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://unpkg.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+    <!-- Critical CSS Preload -->
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/style.css">
+    </noscript>
+    <link rel="preload" href="css/humberger.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/humberger.css">
+    </noscript>
+
+    <!-- Font & Icons with display=swap -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&family=Work+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Animation on Scroll -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    </noscript>
 
-    <!-- Meta SEO -->
-    <!-- Bahasa Indonesia -->
-    <meta name="description"
-        content="Portfolio Akmal Rahmansyah, seorang Web Developer dengan pengalaman menggunakan Laravel, Vue.js, Livewire, dan MySQL.">
-    <meta name="keywords"
-        content="Portofolio, Web Developer, Laravel, Vue.js, Livewire, MySQL, Akmal Rahmansyah, Fullstack Developer">
-    <meta name="author" content="Akmal Rahmansyah">
-    <meta name="language" content="id">
-
-    <!-- Bahasa Inggris -->
-    <meta http-equiv="Content-Language" content="en">
-    <meta name="description" lang="en"
-        content="Akmal Rahmansyah's portfolio website showcasing web development projects using Laravel, Vue.js, Livewire, and MySQL.">
-    <meta name="keywords" lang="en"
-        content="Portfolio, Web Developer, Laravel, Vue.js, Livewire, MySQL, Akmal Rahmansyah, Fullstack Developer">
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://portofolio-akmal.netlify.app//"
+            },
+            {
+                "@type": "ListItem", 
+                "position": 2,
+                "name": "About",
+                "item": "https://portofolio-akmal.netlify.app//#about"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Projects",
+                "item": "https://portofolio-akmal.netlify.app//#projects"
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Contact",
+                "item": "https://portofolio-akmal.netlify.app//#contacts"
+            }
+        ]
+    }
+    </script>
 </head>
 
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" role="banner">
         <div class="branding">
-            <img class="profile-icon" src="asset/img/icon.png" alt="Profile Photo">
-            <a href="#about" class="a-non">
+            <img class="profile-icon" src="asset/img/icon.png" alt="Akmal Rahmansyah Profile Icon" width="40"
+                height="40">
+            <a href="#about" class="a-non" aria-label="Go to About section">
                 <h1 class="name">Akmal Rahmansyah</h1>
             </a>
         </div>
 
         <!-- Tombol Hamburger Menu -->
-        <button id="hamburger-menu" class="hamburger-menu">
+        <button id="hamburger-menu" class="hamburger-menu" aria-label="Toggle navigation menu" aria-expanded="false">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </button>
 
         <!-- Navigasi -->
-        <nav class="navbar-nav">
+        <nav class="navbar-nav" role="navigation" aria-label="Main navigation">
             <div class="tombol-carousel">
-                <a href="#about" class="tombol">About Me</a>
-                <a href="#sertifikat" class="tombol">Certificate</a>
-                <a href="#skil" class="tombol">Skill</a>
-                <a href="#projects" class="tombol">Project </a>
-                <a href="#contacts" class="tombol">Contact</a>
+                <a href="#about" class="tombol" aria-label="About Me section">About Me</a>
+                <a href="#sertifikat" class="tombol" aria-label="Certificate section">Certificate</a>
+                <a href="#skil" class="tombol" aria-label="Skills section">Skill</a>
+                <a href="#projects" class="tombol" aria-label="Projects section">Project</a>
+                <a href="#contacts" class="tombol" aria-label="Contact section">Contact</a>
             </div>
         </nav>
     </header>
 
-
-    <!-- Sosial Media -->
-    <div class="social-links">
-        <a href="https://www.linkedin.com/in/akmal-rahmansyah-803156262/" class="social-icon" target="_blank">
-            <i class="bi bi-linkedin"></i>
+    <!-- Social Media -->
+    <aside class="social-links" aria-label="Social media links">
+        <a href="https://www.linkedin.com/in/akmal-rahmansyah-803156262/" class="social-icon" target="_blank"
+            rel="noopener noreferrer" aria-label="Visit LinkedIn profile">
+            <i class="bi bi-linkedin" aria-hidden="true"></i>
             <span>LinkedIn</span>
         </a>
-        <a href="https://github.com/akmalr02" class="social-icon" target="_blank">
-            <i class="bi bi-github"></i>
+        <a href="https://github.com/akmalr02" class="social-icon" target="_blank" rel="noopener noreferrer"
+            aria-label="Visit GitHub profile">
+            <i class="bi bi-github" aria-hidden="true"></i>
             <span>GitHub</span>
         </a>
-        <a href="https://wa.me/628128194812?text=Halo,%20saya%20ingin%20bertanya" class="social-icon" target="_blank">
-            <i class="bi bi-whatsapp"></i>
+        <a href="https://wa.me/628128194812?text=Halo,%20saya%20ingin%20bertanya" class="social-icon" target="_blank"
+            rel="noopener noreferrer" aria-label="Contact via WhatsApp">
+            <i class="bi bi-whatsapp" aria-hidden="true"></i>
             <span>WhatsApp</span>
         </a>
-    </div>
+        <a href="https://t.me/@akmal_r02" class="social-icon" target="_blank" rel="noopener noreferrer"
+            aria-label="Contact via Telegram">
+            <i class="bi bi-telegram" aria-hidden="true"></i>
+            <span>Telegram</span>
+        </a>
+    </aside>
 
-    <!-- Hero Section -->
-    <section id="about" class="hero">
-        <h2 data-aos="zoom-in-up">About Me</h2>
-        <div class="card">
-            <div class="hero-container">
-                <img src="asset/img/Akmal.jpg" alt="Profile Photo" class="profile-photo">
-                <div class="hero-text">
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="about" class="hero">
+            <h2 data-aos="zoom-in-up">About Me</h2>
+            <div class="card">
+                <div class="hero-container">
+                    <img src="asset/img/Akmal.jpg" alt="Akmal Rahmansyah - Web Developer" class="profile-photo"
+                        width="300" height="300" loading="eager">
+                    <div class="hero-text">
+                        <!-- Judul -->
+                        <h3 class="judul-en lang-en" role="heading" aria-level="3"></h3>
 
-                    <!-- Judul -->
-                    <h1 class="judul-en lang-en"></h1>
+                        <!-- Deskripsi -->
+                        <p class="plugins1-en lang-en"></p>
+                        <p class="plugins2-en lang-en"></p>
 
-                    <!-- Deskripsi -->
-                    <p class="plugins1-en lang-en"></p>
-
-                    <p class="plugins2-en lang-en"></p>
-
-                    <!-- Tombol -->
-                    <div id="lang-toggle" class="hidden" style="text-align: right; margin-top: 1rem;">
-                        <a id="downloadLink" href="asset/pdf/CV.pdf" target="_blank" download="Resume_Akmal.pdf"
-                            class="tombol2">
-                            <i class="bi bi-filetype-pdf"></i> Download Resume
-                        </a>
+                        <!-- Tombol -->
+                        <div id="lang-toggle" class="hidden" style="text-align: right; margin-top: 1rem;">
+                            <a id="downloadLink" href="asset/pdf/CV.pdf" target="_blank"
+                                download="Resume_Akmal_Rahmansyah.pdf" class="tombol2"
+                                aria-label="Download Akmal's Resume PDF">
+                                <i class="bi bi-filetype-pdf" aria-hidden="true"></i> Download Resume
+                            </a>
+                        </div>
                     </div>
-
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- sertifikat -->
-    <section id="sertifikat" class="title">
-        <h2 data-aos="zoom-in-up">Certificate</h2>
-        <div class="sertifikat">
-            <div class="card2">
-                <img src="asset/img/Sertifikasi/BEC-V.jpg" alt="Business English Certificate V"
-                    onclick="openModal(this)">
-                <div class="card-info">
-                    <p>Business English Certificate V</p>
+        <!-- sertifikat -->
+        <section id="sertifikat" class="title">
+            <h2 data-aos="zoom-in-up">Certificate</h2>
+            <div class="sertifikat">
+                <div class="card2">
+                    <img src="asset/img/Sertifikasi/BEC-V.jpg" alt="Business English Certificate V by Akmal Rahmansyah"
+                        onclick="openModal(this)">
+                    <div class="card-info">
+                        <p>Business English Certificate V</p>
+                    </div>
+                </div>
+
+                <div class="card2">
+                    <img src="asset/img/Sertifikasi/cyber-scurty.jpg"
+                        alt="Cyber Security Certification by Akmal Rahmansyah" onclick="openModal(this)">
+                    <div class="card-info">
+                        <p>Cyber Security Certification</p>
+                    </div>
+                </div>
+
+                <div class="card2">
+                    <img src="asset/img/Sertifikasi/DEA.jpg" alt="Data Engineering Associate by Akmal Rahmansyah"
+                        onclick="openModal(this)">
+                    <div class="card-info">
+                        <p>Data Engineering Associate</p>
+                    </div>
+                </div>
+
+                <div class="card2">
+                    <img src="asset/img/Sertifikasi/Sertifikat Magang .jpg"
+                        alt="Internship Certificate by Akmal Rahmansyah" onclick="openModal(this)">
+                    <div class="card-info">
+                        <p>Internship Certificate</p>
+                    </div>
+                </div>
+
+                <div class="card2">
+                    <img src="asset/img/Sertifikasi/BNSP.jpg"
+                        alt="LSP Professional Certificate 2024-2027 by Akmal Rahmansyah" onclick="openModal(this)">
+                    <div class="card-info">
+                        <p>Sertifikat LSP 2024-2027</p>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <div class="card2">
-                <img src="asset/img/Sertifikasi/cyber-scurty.jpg" alt="Cyber Security Certification"
-                    onclick="openModal(this)">
-                <div class="card-info">
-                    <p>Cyber Security Certification</p>
-                </div>
-            </div>
-
-            <div class="card2">
-                <img src="asset/img/Sertifikasi/DEA.jpg" alt="Data Engineering Associate" onclick="openModal(this)">
-                <div class="card-info">
-                    <p>Data Engineering Associate</p>
-                </div>
-            </div>
-
-            <div class="card2">
-                <img src="asset/img/Sertifikasi/Sertifikat Magang .jpg" alt="Sertifikat Magang"
-                    onclick="openModal(this)">
-                <div class="card-info">
-                    <p>Sertifikat Magang</p>
-                </div>
-            </div>
-
-            <div class="card2">
-                <img src="asset/img/Sertifikasi/BNSP.jpg" alt="Sertifikat Magang" onclick="openModal(this)">
-                <div class="card-info">
-                    <p>Sertifikat LSP 2024-2027</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Modal -->
-    <div id="imageModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img id="modalImage" class="modal-content">
-    </div>
-
-    <!-- skil section -->
-    <section id="skil" class="skil">
-        <h2 data-aos="zoom-in-up">Skill</h2>
-        <div class="skil-container">
-            <a href="https://vuejs.org/" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
-                class="a-non" target="_blank">
-                <h1>Vue.js</h1>
-                <img src="asset/img/logo/vue.png" alt="Vue.js">
-            </a>
-            <a href="https://laravel.com/" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
-                class="a-non" target="_blank">
-                <h1>Laravel</h1>
-                <img src="asset/img/logo/laravel.png" alt="Laravel">
-            </a>
-            <a href="https://getbootstrap.com/" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
-                class="a-non" target="_blank">
-                <h1>Bootstrap</h1>
-                <img src="asset/img/logo/bootstrap.png" alt="bootstrapUI">
-            </a>
-            <a href="https://tailwindui.com/" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
-                class="a-non" target="_blank">
-                <h1>Tailwind</h1>
-                <img src="asset/img/logo/tailwind.png" alt="TailwindUI">
-            </a>
-            <a href="https://jwt.io/" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="a-non"
-                target="_blank">
-                <h1>JWT</h1>
-                <img src="asset/img/logo/jwt.png" alt="TailwindUI">
-            </a>
-            <a href="https://www.mysql.com/" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
-                class="a-non" target="_blank">
-                <h1>mysql</h1>
-                <img src="asset/img/logo/MySql.png" alt="TailwindUI">
-            </a>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="title">
-        <h2 data-aos="zoom-in-up">Project</h2>
-        <div id="categories" class="content">
-            <div data-aos="zoom-out-right" data-aos-duration="1000">
-                <button class="category" data-category="e-voting">
-                    <img src="asset/img/logo/logo kemku.jpg" alt="Laravel">
-                    <h1>E-Voting</h1>
-                </button>
-            </div>
-            <div data-aos="zoom-in-up" data-aos-duration="1000">
-                <button class="category" data-category="inventaris">
-                    <img src="asset/img/logo/logo.png" alt="Laravel">
-                    <h1>Inventaris</h1>
-                </button>
-            </div>
-            <div data-aos="zoom-out-left" data-aos-duration="1000">
-                <button class="category" data-category="logo">
-                    <img src="asset/img/icon.png" alt="Laravel">
-                    <h1>Services</h1>
-                </button>
-            </div>
+        <!-- Modal -->
+        <div id="imageModal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+            <span class="close" onclick="closeModal()" aria-label="Close modal">&times;</span>
+            <img id="modalImage" class="modal-content" alt="Certificate preview">
         </div>
 
-        <div id="project-container" class="content1 project-display">
-            <!-- Gambar dan proyek akan dimasukkan secara dinamis dengan JS -->
-        </div>
-    </section>
+        <!-- Skills section -->
+        <section id="skil" class="skil">
+            <h2 data-aos="zoom-in-up">Technical Skills</h2>
+            <div class="skil-container" role="group" aria-label="Technical skills showcase">
+                <a href="https://vuejs.org/" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
+                    class="a-non" target="_blank" rel="noopener noreferrer" aria-label="Learn more about Vue.js">
+                    <h3>Vue.js</h3>
+                    <img src="asset/img/logo/vue.png" alt="Vue.js Framework Logo" loading="lazy" width="80" height="80">
+                </a>
+                <a href="https://laravel.com/" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
+                    class="a-non" target="_blank" rel="noopener noreferrer" aria-label="Learn more about Laravel">
+                    <h3>Laravel</h3>
+                    <img src="asset/img/logo/laravel.png" alt="Laravel PHP Framework Logo" loading="lazy" width="80"
+                        height="80">
+                </a>
+                <a href="https://getbootstrap.com/" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
+                    class="a-non" target="_blank" rel="noopener noreferrer" aria-label="Learn more about Bootstrap">
+                    <h3>Bootstrap</h3>
+                    <img src="asset/img/logo/bootstrap.png" alt="Bootstrap CSS Framework Logo" loading="lazy" width="80"
+                        height="80">
+                </a>
+                <a href="https://tailwindcss.com/" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
+                    class="a-non" target="_blank" rel="noopener noreferrer" aria-label="Learn more about Tailwind CSS">
+                    <h3>Tailwind CSS</h3>
+                    <img src="asset/img/logo/tailwind.png" alt="Tailwind CSS Framework Logo" loading="lazy" width="80"
+                        height="80">
+                </a>
+                <a href="https://jwt.io/" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
+                    class="a-non" target="_blank" rel="noopener noreferrer" aria-label="Learn more about JWT">
+                    <h3>JWT Authentication</h3>
+                    <img src="asset/img/logo/jwt.png" alt="JWT Authentication Logo" loading="lazy" width="80"
+                        height="80">
+                </a>
+                <a href="https://www.mysql.com/" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
+                    class="a-non" target="_blank" rel="noopener noreferrer" aria-label="Learn more about MySQL">
+                    <h3>MySQL Database</h3>
+                    <img src="asset/img/logo/MySql.png" alt="MySQL Database Logo" loading="lazy" width="80" height="80">
+                </a>
+            </div>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contacts" class="contact-section">
-        <h2 data-aos="zoom-in-up">Contact Me</h2>
-        <div class="contact">
-            <form class="contact-form">
-                <input data-aos="zoom-in-up" type="text" placeholder="Your Name" required>
-                <input data-aos="zoom-in-up" type="email" placeholder="Your Email" required>
-                <div class="col">
-                    <textarea data-aos="zoom-in-up" placeholder="Your Message" required></textarea>
+        <!-- Projects Section -->
+        <section id="projects" class="title">
+            <h2 data-aos="zoom-in-up">Project</h2>
+            <div id="categories" class="content">
+                <div data-aos="zoom-out-right" data-aos-duration="1000">
+                    <button class="category" data-category="e-voting">
+                        <img src="asset/img/logo/logo kemku.jpg" alt="Laravel">
+                        <h1>E-Voting</h1>
+                    </button>
                 </div>
-                <div class="button-wrapper">
-                    <button type="submit">Send</button>
+                <div data-aos="zoom-in-up" data-aos-duration="1000">
+                    <button class="category" data-category="inventaris">
+                        <img src="asset/img/logo/logo.png" alt="Laravel">
+                        <h1>Inventaris</h1>
+                    </button>
                 </div>
-            </form>
-        </div>
-    </section>
+                <div data-aos="zoom-out-left" data-aos-duration="1000">
+                    <button class="category" data-category="logo">
+                        <img src="asset/img/icon.png" alt="Laravel">
+                        <h1>Services</h1>
+                    </button>
+                </div>
+            </div>
 
-    <script src="js/main.js"></script>
-    <script src="js/image.js"></script>
-    <script src="js/drop-down.js"></script>
-    <script src="js/humburger.js"></script>
-    <!-- <script src="js/block.js"></script> -->
+            <div id="project-container" class="content1 project-display">
+                <!-- Gambar dan proyek akan dimasukkan secara dinamis dengan JS -->
+            </div>
+        </section>
 
-    <!-- animasi AOS -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <!-- Contact Section -->
+        <section id="contacts" class="contact-section">
+            <h2 data-aos="zoom-in-up">Get In Touch</h2>
+            <div class="contact">
+                <form class="contact-form" role="form" aria-label="Contact form">
+                    <input id="name" data-aos="zoom-in-up" type="text" placeholder="Your Name" required
+                        aria-required="true">
+
+                    <input id="email" data-aos="zoom-in-up" type="email" placeholder="Your Email" required
+                        aria-required="true">
+
+                    <div class="col">
+                        <textarea id="message" data-aos="zoom-in-up" placeholder="Your Message" required
+                            aria-required="true"></textarea>
+                    </div>
+                    <div class="button-wrapper">
+                        <button type="submit" aria-label="Send message">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo" style="text-align: center; padding: 2rem; background: #1a202c; color: white;">
+        <p>&copy; 2025 Akmal Rahmansyah. All rights reserved.</p>
+        <p>Web Developer | Jakarta, Indonesia</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
+    <script src="js/image.js" defer></script>
+    <script src="js/drop-down.js" defer></script>
+    <script src="js/humburger.js" defer></script>
+    <script src="js/block.js" defer></script>
+
+    <!-- Animation AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
     <script>
-        AOS.init();
-    </script>
-
-    <!-- animasi GSAP -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
-    <script>
-        gsap.registerPlugin(TextPlugin);
-
-        gsap.to('.judul-en', {
-            duration: 4,
-            delay: 1,
-            text: 'Web Developer'
-        });
-
-        gsap.to('.plugins1-en', {
-            duration: 6,
-            delay: 2,
-            text: 'I am a Full-Stack Web Developer with expertise in Laravel, Vue.js, Tailwind CSS, and REST API integration. Over the course of several previous projects, I have developed digital solutions such as e-voting systems, inventory management platforms, and service request applications. My expertise includes designing role-based authentication systems, building responsive interfaces, and integrating real-time data visualizations through modern frameworks like Livewire and Chart.js.'
-        });
-
-        gsap.to('.plugins2-en', {
-            duration: 6,
-            delay: 3,
-            text: 'I am committed to continuous learning and collaboration, with a strong focus on delivering high-quality code, user-centered design, and scalable architecture. I aspire to contribute to global projects where technology empowers efficiency, transparency, and innovation.',
-            onComplete: () => {
-                document.getElementById('lang-toggle').classList.remove('hidden');
-            }
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
         });
     </script>
 
-    <!-- email -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Animation GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js" defer></script>
     <script>
-        emailjs.init("7Pt88DNXG-5I2Qwue");
+        document.addEventListener('DOMContentLoaded', function () {
+            gsap.registerPlugin(TextPlugin);
 
-        document.querySelector(".contact-form").addEventListener("submit", function (event) {
-            event.preventDefault();
+            gsap.to('.judul-en', {
+                duration: 4,
+                delay: 1,
+                text: 'Full-Stack Web Developer'
+            });
 
-            const form = event.target;
-            const name = form.querySelector('input[type="text"]').value;
-            const email = form.querySelector('input[type="email"]').value;
-            const message = form.querySelector("textarea").value;
+            gsap.to('.plugins1-en', {
+                duration: 6,
+                delay: 2,
+                text: 'I am a Full-Stack Web Developer with expertise in Laravel, Vue.js, Tailwind CSS, and REST API integration. Over the course of several previous projects, I have developed digital solutions such as e-voting systems, inventory management platforms, and service request applications. My expertise includes designing role-based authentication systems, building responsive interfaces, and integrating real-time data visualizations through modern frameworks like Livewire and Chart.js.'
+            });
 
-            emailjs.send("service_6d5933o", "template_dqes0x5", {
-                from_name: name,
-                from_email: email,
-                message: message,
-            }).then(
-                function (response) {
-                    console.log("Email berhasil dikirim:", response);
-                    alert("Pesan berhasil dikirim! Terima kasih telah menghubungi kami.");
-                    form.reset();
-                },
-                function (error) {
-                    console.error("Gagal mengirim email:", error);
-                    alert("Terjadi kesalahan. Silakan coba lagi.");
+            gsap.to('.plugins2-en', {
+                duration: 6,
+                delay: 3,
+                text: 'I am committed to continuous learning and collaboration, with a strong focus on delivering high-quality code, user-centered design, and scalable architecture. I aspire to contribute to global projects where technology empowers efficiency, transparency, and innovation.',
+                onComplete: () => {
+                    document.getElementById('lang-toggle').classList.remove('hidden');
                 }
-            );
+            });
         });
     </script>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            emailjs.init("7Pt88DNXG-5I2Qwue");
+
+            document.querySelector(".contact-form").addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                const form = event.target;
+                const name = form.querySelector('#name').value;
+                const email = form.querySelector('#email').value;
+                const message = form.querySelector("#message").value;
+
+                // Show loading state
+                const submitBtn = form.querySelector('button[type="submit"]');
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = 'Sending...';
+                submitBtn.disabled = true;
+
+                emailjs.send("service_6d5933o", "template_dqes0x5", {
+                    from_name: name,
+                    from_email: email,
+                    message: message,
+                }).then(
+                    function (response) {
+                        console.log("Email berhasil dikirim:", response);
+                        alert("Pesan berhasil dikirim! Terima kasih telah menghubungi kami.");
+                        form.reset();
+                    },
+                    function (error) {
+                        console.error("Gagal mengirim email:", error);
+                        alert("Terjadi kesalahan. Silakan coba lagi.");
+                    }
+                ).finally(function () {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                });
+            });
+        });
+    </script>
+
+    <!-- Add hidden content for additional SEO -->
+    <div style="display: none;">
+        <h1>Akmal Rahmansyah - Professional Web Developer Jakarta</h1>
+        <p>Jasa pembuatan website profesional, aplikasi web, e-voting system, inventory management, Laravel developer,
+            Vue.js developer, MySQL database, fullstack developer Indonesia</p>
+    </div>
 </body>
 
 </html>
