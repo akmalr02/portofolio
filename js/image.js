@@ -1,6 +1,5 @@
 // ========== MODAL FUNCTIONALITY ==========
 
-// Get modal elements
 const modal = document.getElementById("imageModal");
 const modalImg = document.getElementById("modalImage");
 const closeBtn = document.querySelector(".close");
@@ -141,5 +140,5 @@ document.addEventListener("DOMContentLoaded", function () {
     card.style.cursor = "pointer";
   });
 
-  console.log(`Modal initialized for ${cards.length} certificate cards`);
+  // console.log(`Modal initialized for ${cards.length} certificate cards`);
 });

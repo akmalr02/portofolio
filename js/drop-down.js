@@ -248,5 +248,5 @@ document.addEventListener("DOMContentLoaded", function () {
   // Start observing
   observer.observe(projectContainer, { childList: true, subtree: true });
 
-  console.log("Project section initialized with", projects.length, "projects");
+  // console.log("Project section initialized with", projects.length, "projects");
 });
